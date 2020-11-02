@@ -1,5 +1,6 @@
 package com.huzaifa.angular.controller;
 
+import com.huzaifa.angular.dto.LoginRequestDto;
 import com.huzaifa.angular.dto.RegisterRequestDto;
 import com.huzaifa.angular.service.AuthService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +27,11 @@ public class AuthController {
     public ResponseEntity signup(@RequestBody RegisterRequestDto registerRequestDto){
         authService.signup(registerRequestDto);
         return new ResponseEntity(HttpStatus.OK);
+    }
+
+    @PostMapping(value = "/login")
+    public void login(@RequestBody LoginRequestDto loginRequestDto){
+        authService.login(loginRequestDto);
     }
 
 }
