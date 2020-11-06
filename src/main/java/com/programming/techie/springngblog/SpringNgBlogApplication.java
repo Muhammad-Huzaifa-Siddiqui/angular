@@ -1,13 +1,13 @@
-package com.huzaifa.angular;
+package com.programming.techie.springngblog;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AngularApplication {
+public class SpringNgBlogApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AngularApplication.class, args);
+		SpringApplication.run(SpringNgBlogApplication.class, args);
 	}
 
 }
